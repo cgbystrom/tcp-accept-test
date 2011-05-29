@@ -46,7 +46,7 @@ public class Server {
             numThreads = Integer.valueOf(System.getProperty("threads"));
 
         if (System.getProperty("backlog") != null)
-            numThreads = Integer.valueOf(System.getProperty("backlog"));
+            backlog = Integer.valueOf(System.getProperty("backlog"));
 
         if (System.getProperty("port") != null)
             port = Integer.valueOf(System.getProperty("port"));
